@@ -9,10 +9,10 @@
 
 ## 構成
 ディレクトリ構成は以下の通りです．
-- mediapipe_div : モデルの作成, 簡易動作試験のスクリプト
-- sliding : 画像を分割してから物体を検出するスクリプト
-- tello-experiment : telloを用いた実験用スクリプト. yolo v7を使用
-- yolov3-mediapipe : 人検知処理と関節検知処理を組み合わせたスクリプト
+- `mediapipe_div` : モデルの作成, 簡易動作試験のスクリプト
+- `sliding` : 画像を分割してから物体を検出するスクリプト
+- `tello-experiment` : telloを用いた実験用スクリプト. yolo v7を使用
+- `yolov3-mediapipe` : 人検知処理と関節検知処理を組み合わせたスクリプト
 
 ## 初期設定
 ## YOLO v3
