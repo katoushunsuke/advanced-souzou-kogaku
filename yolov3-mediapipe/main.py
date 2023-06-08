@@ -1,6 +1,5 @@
 # yolo
 import time
-
 import cv2
 import os
 import numpy as np
@@ -265,11 +264,8 @@ if __name__ == '__main__':
 
             capture.release()
             cv2.destroyAllWindows()
+        # yolo v3単体の試験をしたい場合はこれ以下をコメントアウト
         elif phase == 2:
             while True:
                 _hands_info = detect_hands(my_model, 0)
                 print(_hands_info)
-        elif phase == 3:
-            print(phase)
-        elif phase == 4:
-            print(phase)
