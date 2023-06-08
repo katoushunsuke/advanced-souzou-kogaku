@@ -52,3 +52,7 @@ mediapipeを用いることで写真のように手の関節の位置情報を�
 ### tello experiment
 TELLOドローンに搭載されたカメラから取得した映像に対して, yolov7とmediapipeによる検知を行っています. 実行直後はYOLO v7のみが起動し, 人が十分近くに検出された際にはYOLO v7が停止して mediapipeが起動します. 
 TELLO単体の試験をしたい場合は [simple_takeoff.py](tello-experiment/simple_takeoff.py)または[joystick_and_video_original.py](tello-experiment/joystick_and_video_orignal.py)を実行してください.
+
+### TODO
+- TELLOから取得した映像をYOLOに入力する処理が最適化されていません. ここで遅延が生じています.
+- 現在はjoystickからの入力に対する応答処理とYOLO v7による検出を並列で行っていますが, 割り込み処理を用いた方が処理を軽量化できる可能性があります.
