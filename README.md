@@ -1,7 +1,7 @@
 # advanced-souzou-kogaku
 
 ## 概要
-物体検出アルゴリズムyolo, 関節検知ライブラリmediapipe, 小型ドローンtelloを組み合わせたアプリケーションのコードを公開しています。
+物体検出アルゴリズムyolo, 関節検知ライブラリmediapipe, 小型ドローンtelloを組み合わせたアプリケーションのコードを公開しています。各モジュールの詳細については以下のリンクを参照してください.
 - [yolo v3](https://pjreddie.com/darknet/yolo/)
 - [yolo v7](https://github.com/WongKinYiu/yolov7)
 - [mediapipe](https://developers.google.com/mediapipe)
@@ -29,3 +29,8 @@ pip install requirements.txt
 YOLO v3のときと同様に [weights](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt)をダウンロードして該当する箇所に変更を加えます. これによりdetect.pyの実行が可能になります.
 ### TELLO
 telloを用いたデモコードを実行するためには, [MPlayer](https://drive.google.com/drive/folders/1qeqQ2OQrAgvcXlVddv23sgrmzCPKIIaB?usp=sharing)をPCにダウンロードし, PATHを通す必要があります.
+
+## 内容
+### Sliding
+![cars](cars.jpg)
+![cars_result](cars_result.png)
