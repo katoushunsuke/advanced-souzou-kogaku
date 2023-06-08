@@ -17,9 +17,7 @@
 ## 初期設定
 # YOLO v3
 [weights](https://pjreddie.com/media/files/yolov2-tiny.weights)と[cfg](https://github.com/pjreddie/darknet/blob/master/cfg/yolov2-tiny.cfg)を作業ディレクトリにダウンロードしてください．
-```
-net = cv2.dnn.readNet("model_yolo.weights", "model_yolo.cfg")
-```
+`net = cv2.dnn.readNet("model_yolo.weights", "model_yolo.cfg")`
 ## documets
 参考資料およびシステム図
 物体検出アルゴリズム'yolo'を用いたアプリケーションです．
