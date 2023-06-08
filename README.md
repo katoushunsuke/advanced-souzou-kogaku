@@ -16,8 +16,14 @@
 
 ## 初期設定
 # YOLO v3
-[weights](https://pjreddie.com/media/files/yolov2-tiny.weights)と[cfg](https://github.com/pjreddie/darknet/blob/master/cfg/yolov2-tiny.cfg)を作業ディレクトリにダウンロードしてください．
-`net = cv2.dnn.readNet("model_yolo.weights", "model_yolo.cfg")`
-## documets
-参考資料およびシステム図
-物体検出アルゴリズム'yolo'を用いたアプリケーションです．
+[weights](https://pjreddie.com/media/files/yolov2-tiny.weights)と[cfg](https://github.com/pjreddie/darknet/blob/master/cfg/yolov2-tiny.cfg)を作業ディレクトリにダウンロードしてください．ファイルに任意の名前を付け, YOLO v3用スクリプトの`net = cv2.dnn.readNet("model_yolo.weights", "model_yolo.cfg")`の部分をファイル名に合わせて変更してください.
+## YOLO v7
+'''
+git clone https://github.com/WongKinYiu/yolov7
+'''
+を pycharmのターミナルで実行してください．クローンが完了したら,
+'''
+pip install requirements.txt
+'''
+を実行して必要なモジュールをインストールします．
+YOLO v3のときと同様に [weights](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt)をダウンロードして該当する箇所に変更を加えます. これによりdetect.pyの実行が可能になります.
